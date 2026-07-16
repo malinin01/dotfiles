@@ -20,6 +20,7 @@ brew "n" # Node version management
 brew "ncdu" # Disk usage analyzer with an ncurses interface
 brew "neovim"
 brew "nushell"
+brew "opencode"
 brew "p7zip"
 brew "podman" # Safer alternative to Docker
 brew "python@3"
@@ -29,6 +30,7 @@ brew "rsteube/tap/carapace" # A multi-shell completion binary
 brew "sd" # Modern alternative to sed
 brew "starship" # Cross-shell prompt
 brew "stow" # Symlink farm manager
+brew "tailscale"
 brew "tmux"
 brew "tree" # Display directories as trees (with optional color/HTML output)
 brew "zellij" # Modern terminal multiplexer
