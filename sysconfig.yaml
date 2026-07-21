@@ -15,7 +15,7 @@ packages:
       - atuin
       - bat
       - chafa # terminal image viewer
-      - cuda # needed for whisper and ollama
+      - cuda # needed for various CUDA-based tools, including Ollama
       - fastfetch
       - ffmpeg
       - fzf
