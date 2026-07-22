@@ -33,6 +33,7 @@ brew "stow" # Symlink farm manager
 brew "tailscale"
 brew "tmux"
 brew "tree" # Display directories as trees (with optional color/HTML output)
+brew "yazi"
 brew "zellij" # Modern terminal multiplexer
 brew "zoxide" # Shell extension to navigate filesystem faster
 # cask "tunnelblick" # Free and open-source OpenVPN client
@@ -48,6 +49,7 @@ cask "hammerspoon" # Desktop automation application
 cask "homerow" # Keyboard shortcuts for UI navigation
 cask "inkscape" # Vector graphics editor
 cask "insomnia"
+cask "istat-menus"
 cask "jordanbaird-ice" # Menu bar manager
 cask "keycastr" # Open-source keystroke visualiser
 cask "localsend" # Easy file sharing over local network
