@@ -25,7 +25,7 @@ Some of the configurations included:
 
 > [!IMPORTANT]
 > **macOS**: Ensure you have [Homebrew](https://brew.sh/) installed on your system.
-> **Linux**: If using Debian downstreams on LTS, the best way to get the latest packages is the [nix package manager](https://nixos.org/download.html). Ensure it is installed on your system.
+> **Linux (Arch-based)**: Install at least `cli` and `system` packages from `sysconfig.yaml`.
 
 ### Setup
 
@@ -45,23 +45,15 @@ cd ~/dotfiles
 brew bundle install
 ```
 
-**Linux (Debian downstreams):**
-
-```bash
-# Install packages and fonts with nix
-nix-env -if packages.nix
-# Install Flatpak packages from sysconfig.yaml. Some apps are better to install from official .deb files; check which software distributions are recommended by developers.
-flatpak install flathub $(yq '.packages.flatpak[]' sysconfig.yaml)
-```
-
 **Linux (Arch-based):**
 
 ```bash
 sudo pacman -S --needed $(yq '.packages.pacman.cli[]' sysconfig.yaml)
 sudo pacman -S --needed $(yq '.packages.pacman.gui[]' sysconfig.yaml)
+sudo pacman -S --needed $(yq '.packages.pacman.system[]' sysconfig.yaml)
 sudo pacman -S --needed $(yq '.packages.pacman.fonts[]' sysconfig.yaml)
-paru -S --needed $(yq '.packages.paru.cli[]' sysconfig.yaml)
-paru -S --needed $(yq '.packages.paru.gui[]' sysconfig.yaml)
+paru -S --needed $(yq '.packages.aur.cli[]' sysconfig.yaml)
+paru -S --needed $(yq '.packages.aur.gui[]' sysconfig.yaml)
 flatpak install flathub $(yq '.packages.flatpak[]' sysconfig.yaml)
 ```
 
