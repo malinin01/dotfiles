@@ -3,6 +3,10 @@ rustup-init.sh
 nushell/.config/nushell/history.txt
 nvim/.config/nvim/lazy-lock.json
 
+# Containers
+podman-connections.*
+podman-machine-default.*
+
 # COSMIC Theme
 cosmic/.config/cosmic/com.system76.CosmicBackground/
 cosmic/.config/cosmic/com.system76.CosmicSettings.Wallpaper/
